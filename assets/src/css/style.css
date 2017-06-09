@@ -1,0 +1,117 @@
+/* Main Page Styling */
+
+body {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Navigation */
+
+.nav {
+    /*padding: 10px 0;*/
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: table;
+}
+
+.nav__link {
+    display: table-cell;
+    width: 20%;
+    padding: 15px 10px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+.nav__link:hover {
+    background: #fff;
+}
+
+.logo {
+    width: 95%;
+}
+
+/* Hero */
+
+.hero {
+    background: #eee;
+    height: 100vh;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Price Guide */
+
+.prices {
+    padding: 100px 0;
+    min-height: 400px;
+    background: url('../images/floral-overlay.png') #A3D8C5;
+    position: relative;
+}
+
+.prices:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -39px;
+    height: 40px;
+    display: block;
+    width: 100%;
+    /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1260px' height='40px' style='fill: red'><path d='M0,40.7c0-2.5,0.4-3.7,3.4-4C20.7,35,33.6,22.9,36,5.9C36.6,1.5,38.3,1,42.1,1C127.6,1.1,213.1,1,298.6,1c306.1,0,612.2,0,918.4,0c2.3,0,4.5,0,7,0c2.7,21.9,14.8,34,36.8,36.3c0,1.3,0,2.5,0,3.7L0,40.7z'/></svg>");
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;*/
+    background: inherit;
+    -webkit-mask-image: url(../images/logo-shape.svg);
+    mask-image: url(../images/logo-shape.svg);
+    mask-size: cover;
+    -webkit-mask-size: 102%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+}
+
+.prices:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -39px;
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: inherit;
+    -webkit-mask-image: url(../images/logo-shape.svg);
+    mask-image: url(../images/logo-shape.svg);
+    mask-size: cover;
+    -webkit-mask-size: 102%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+    transform: rotate(180deg);
+}
+
+
+/* Footer */
+
+footer {
+    height: 400px;
+    background: url('../images/floral-overlay.png') #000;
+}
